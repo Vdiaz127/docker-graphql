@@ -28,11 +28,14 @@ jobs:
     - name: Build docker image
       run: 
         docker build -t victordiazdev/docker-graphql:0.0.2 .
+        
         docker build -t victordiazdev/docker-graphql:latest .
+        
         
     - name: Push docker image
       run: 
         docker push victordiazdev/docker-graphql:0.0.2
+        
         docker push victordiazdev/docker-graphql:latest
 
     
